@@ -5,8 +5,8 @@ import Stone from "../assets/icons/Stone.svg";
 
 export function ResourcesMenu(props) {
   return (
-    <div className="flex items-end justify-center h-screen pb-6">
-      <div className="w-10/12 h-24 border-2 border-sky-900 bg-blue-200/40 rounded-md flex items-center justify-center">
+    <div className="flex items-end justify-center h-screen">
+      <div className="w-10/12 h-24 border-2 border-sky-900/70 bg-sky-200/70 backdrop-blur-sm rounded-md flex items-center justify-center">
         <div className="flex flex-row h-16 gap-12">
           <div className="flex flex-row gap-4">
             <img src={Survivor} alt="Survivor" className="w-16" />

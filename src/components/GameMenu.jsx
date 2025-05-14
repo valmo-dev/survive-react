@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Shed from "../assets/icons/Shed.svg";
 import { Game } from "./Game";
+import { Alert } from "./Alert";
 
 const listSentences = [
   "Que la partie commence !",
@@ -12,6 +13,7 @@ const listSentences = [
 export function GameMenu() {
   const [sentence, setSentence] = useState("");
   const [showGame, setShowGame] = useState(false);
+  const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
     const randomIndex = Math.floor(Math.random() * listSentences.length);
@@ -23,7 +25,11 @@ export function GameMenu() {
   };
 
   const handleCreditsClick = () => {
-    alert("Jeu développé par : Valou.");
+    setShowAlert(true);
+  };
+
+  const handleCloseCredits = () => {
+    setShowAlert(false);
   };
 
   if (showGame) {
@@ -31,7 +37,7 @@ export function GameMenu() {
   }
 
   return (
-    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-slate-900 via-slate-950 to-slate-900">
+    <div className="min-h-screen w-full flex items-center justify-center bg-gradient-to-br from-sky-700 via-sky-800 to-sky-950">
       <div className="w-full max-w-md mx-auto px-6 py-10 bg-slate-900/80 rounded-xl flex flex-col items-center">
         <header className="text-center mb-10">
           <img
@@ -64,6 +70,14 @@ export function GameMenu() {
           <p>&copy; {new Date().getFullYear()} Valou. Tous droits réservés.</p>
         </footer>
       </div>
+
+      {showAlert && (
+        <Alert
+          title="Crédit du jeu"
+          description="Jeu développé par Valentin MOREAU, avec React & Tailwind Css."
+          onClose={handleCloseCredits}
+        />
+      )}
     </div>
   );
 }
