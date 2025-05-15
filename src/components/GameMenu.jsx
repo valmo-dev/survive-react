@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Shed from "../assets/icons/Shed.svg";
+import Shed from "../assets/icons/shed.svg";
 import { Game } from "./Game";
 import { Alert } from "./Alert";
 
