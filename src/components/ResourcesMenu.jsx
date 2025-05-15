@@ -1,7 +1,7 @@
-import Survivor from "../assets/icons/Survivor.svg";
-import Meat from "../assets/icons/Meat.svg";
-import Wood from "../assets/icons/Wood.svg";
-import Stone from "../assets/icons/Stone.svg";
+import Survivor from "../assets/icons/survivor.svg";
+import Meat from "../assets/icons/meat.svg";
+import Wood from "../assets/icons/wood.svg";
+import Stone from "../assets/icons/stone.svg";
 
 export function ResourcesMenu(props) {
   return (
