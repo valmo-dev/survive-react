@@ -67,7 +67,7 @@ export function GameMenu() {
         </nav>
 
         <footer className="absolute bottom-4 text-center text-slate-500 text-xs">
-          <p>&copy; {new Date().getFullYear()} Valou. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} Valentin Moreau. Tous droits réservés.</p>
         </footer>
       </div>
 
