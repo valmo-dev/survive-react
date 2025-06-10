@@ -76,6 +76,6 @@ npm run dev
 
 ## 🎨 Captures d'écran
 
-![Capture d'écran : Menu du jeu](menu.png)
-![Capture d'écran : Plateau du jeu](game.png)
-![Capture d'écran : Game Over](gameover.png)
+![Capture d'écran : Menu du jeu](/public/menu.png)
+![Capture d'écran : Plateau du jeu](/public/game.png)
+![Capture d'écran : Game Over](/public/gameover.png)
