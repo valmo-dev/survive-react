@@ -1,7 +1,6 @@
 import Cabin from "../assets/icons/cabin.svg";
 import Tree from "../assets/icons/tree.svg";
 import Survivor from "../assets/icons/survivor.svg";
-import { useState, useEffect } from "react";
 
 export function Map({ gridData, onCellClick }) {
   return (
